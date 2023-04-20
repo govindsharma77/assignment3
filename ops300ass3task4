@@ -1,1 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: assignment3task2
+  labels:
+    app: centos
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: centos
+  template:
+    metadata:
+      labels:
+        app: centos
+    spec:
+      containers:
+      - name: centos-ass3task2
+        image: centos
 
