@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: assignment3task2
+  name: assignment3task5
   labels:
     app: centos
 spec:
@@ -15,6 +15,6 @@ spec:
         app: centos
     spec:
       containers:
-      - name: centos-ass3task2
+      - name: centos-ass3task5
         image: centos
 
